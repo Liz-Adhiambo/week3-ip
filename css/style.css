@@ -1,12 +1,34 @@
 
 .home-page{
   background-image: url('../img/background/h_img.jpg');
-  background-position: center center;
-  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   color: white;
   text-align: center;
-  padding-top:17%; 
+  padding-top:15%; 
   font-family: 'Gabriela', serif;
-  /* padding-bottom:5%; */
+  background-size: cover;
+}
+
+.home-page h1{
+  padding: 2px;
+  margin: 5px;
+}
+.home-page p{
+  padding: 2px;
+}
+#logo{
+  margin-top: 12px;
+  margin-bottom: 24px;
+  width: 70px;
+  height: 70px;;
+}
+#mouse-click{
+  padding-top : 22px;
+  margin-top: 10%;
+  padding-bottom: 30px; 
+  animation-iteration-count: infinite;
+}
+#mouse-click {
+  animation: bounce 2s infinite;
 }
