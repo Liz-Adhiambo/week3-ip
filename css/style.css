@@ -46,3 +46,24 @@
     transform: translateY(-45px);
   }
 }
+
+.about{
+  text-align: center;
+  padding-bottom: 30px;
+  padding-top:40px;
+  font-family: 'Calibri';
+  font-size: 18px;
+}
+#about-page{
+  font-family: 'Gabriela', serif;
+}
+.services{
+  text-align: center;
+  background-image: url("../images/backgrounds/s_image.jpg");
+  color: white;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: 'Copse', serif;
+  font-size: 18px;
+}
