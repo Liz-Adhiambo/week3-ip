@@ -208,7 +208,7 @@ footer p{
   background: rgba(0, 0, 0, 0.5);
   z-index: 0;
   transition: all 0.3s;
-  top: 50%;
+  top: 30%;
   transform-origin: 50% 50%;
   left: 50%;
 }
@@ -228,6 +228,8 @@ footer p{
   min-height: 450px;
   display: flex;
   align-items: center;
+  padding-bottom: 0%;
+  margin-bottom: auto;
 }
 
 #what-we-do .service {
