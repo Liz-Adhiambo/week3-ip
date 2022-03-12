@@ -1,84 +1,65 @@
-$(document).ready(function(){
-  $("#development-image").click(function(){
-    $("#development-image").slideDown('1500').hide('1000');
-    $("#development").show('1500');
-  });
-  $("#development").click(function(){
-    $("#development").slideUp('1500');
-    $("#development-image").slideDown('1500');
-  });
+var contactForm = $("#contact-form");
+
+$(function() {
+    // what we do titles add bold class and center
+    $('.w-title').addClass("fw-bold text-center");
+
+    contactForm.on("submit", function(e) {
+        e.preventDefault();
+        let formValid = validateContactForm();
+        if (formValid) {
+            const name = $("input.name").val();
+
+            alert(`Thank you ${name}, your message has been received`);
+            clearForm();
+        }
+    });
+
+    toggleWhatWeDo();
 });
 
-$(document).ready(function(){
-  $("#design-image").click(function(){
-    $("#design-image").slideDown('1500').hide('1000');
-    $("#design").show('1500');
-  });
-  $("#design").click(function(){
-    $("#design").slideUp('1500');
-    $("#design-image").slideDown('1500');
-  });
-});
+// function
 
-$(document).ready(function(){
-  $("#product-image").click(function(){
-    $("#product-image").slideDown('1500').hide('1000');
-    $("#product").show('1500');
-  });
-  $("#product").click(function(){
-    $("#product").slideUp('1500');
-    $("#product-image").slideDown('1500');
-  });
-});
+//  function to toggle what we do
+function toggleWhatWeDo() {
+    $(".service").on("click", function() {
+        if ($(".service-details", this).is(":visible")) {
+            $(".service-details", this).hide();
+            $(".service-card", this).fadeIn("slow");
+        } else {
+            $(".service-details", this).fadeIn("slow");
+            $(".service-card", this).hide();
+        }
+    });
+}
 
-$(document).ready(function(){
-  $("#work1").mouseover(function(){
-    $("#overlay").show();
-  }).mouseout(function(){
-    $("#overlay").hide();
-  });
-});
-$(document).ready(function(){
-  $("#work2").mouseover(function(){
-    $("#overlay2").show();
-  }).mouseout(function(){
-    $("#overlay2").hide();
-  });
-});
-$(document).ready(function(){
-  $("#work3").mouseover(function(){
-    $("#overlay3").show();
-  }).mouseout(function(){
-    $("#overlay3").hide();
-  });
-});
-$(document).ready(function(){
-  $("#work4").mouseover(function(){
-    $("#overlay4").show();
-  }).mouseout(function(){
-    $("#overlay4").hide();
-  });
-});
+// validate contact form
 
-$(document).ready(function(){
-  $("#work5").mouseover(function(){
-    $("#overlay5").show();
-  }).mouseout(function(){
-    $("#overlay5").hide();
-  });
-  $("#work6").mouseover(function(){
-    $("#overlay6").show();
-  }).mouseout(function(){
-    $("#overlay6").hide();
-  });
-  $("#work7").mouseover(function(){
-    $("#overlay7").show();
-  }).mouseout(function(){
-    $("#overlay7").hide();
-  });
-  $("#work8").mouseover(function(){
-    $("#overlay8").show();
-  }).mouseout(function(){
-    $("#overlay8").hide();
-  });
-});
+function validateContactForm() {
+    let isFormValid = true;
+    const formInputs = contactForm.find("input,textarea");
+
+    formInputs.each(function() {
+        if (!$(this).val()) {
+            $(this).addClass("is-invalid");
+            isFormValid = false;
+        }
+    });
+    return isFormValid;
+}
+
+function removeFormErrors() {
+    contactForm.find("input,textarea").on("keydown", function() {
+        if ($(this).hasClass("is-invalid")) {
+            $(this).removeClass("is-invalid");
+        }
+    });
+}
+
+function clearForm() {
+    contactForm.find("input,textarea").each(function() {
+        $(this).val("");
+    });
+}
+
+removeFormErrors();

@@ -222,3 +222,18 @@ footer p{
 #portfolio .project:hover .project-name {
   display: block;
 }
+
+/* What we do section */
+#what-we-do {
+  min-height: 450px;
+  display: flex;
+  align-items: center;
+}
+
+#what-we-do .service {
+  cursor: pointer;
+}
+
+#what-we-do .service .service-details {
+  display: none;
+}
