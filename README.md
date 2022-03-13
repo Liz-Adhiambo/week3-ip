@@ -4,11 +4,10 @@ Elizabeth Adhiambo Onyango
 
 
 # Delani Studio
-African culture is expressed in its arts and crafts, religion, clothing, cuisine, music, languages and names.
-
+At Delani Studio, Africans express experiences in its arts and crafts.
 
 ## Description
-this is a landing page for Delani Studio designed with html, css and Javascript. The website contains a portfolio with a contact section and also escribes what Delani Studio offers in service.
+This is a landing page for Delani Studio designed with html, css and Javascript. The website contains a portfolio with a contact section and also escribes what Delani Studio offers in service.
 
 ## Technologies Used
 * HTML
@@ -20,11 +19,12 @@ this is a landing page for Delani Studio designed with html, css and Javascript.
 
 1. Download or clone the project
 2. Navigate to the cloned or downloaded folder
-1. Open index.html file with your browser
+  (i) Open index.html file with your browser
+
 
 ## Design
 
-![Design]()
+![Design](img/screenshot.jpg)
 
 ## Demo
 [Here is link to the site](
