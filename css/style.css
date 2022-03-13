@@ -6,7 +6,6 @@
   color: white;
   text-align: center;
   padding-top:15%; 
-  font-family: 'Gabriela', serif;
   background-size: cover;
 }
 
@@ -51,11 +50,7 @@
   text-align: center;
   padding-bottom: 30px;
   padding-top:40px;
-  font-family:Arial;
   font-size: 18px;
-}
-#about-page{
-  font-family: Arial;
 
 }
 .services-section{
@@ -65,22 +60,17 @@
   background-position:left;
   background-size: cover;
   background-repeat: no-repeat;
-  font-family: 'Copse', serif;
   font-size: 18px;
 }
 
-.services h2{
-  font-family: 'Gabriela', serif;
-  
-}
 #services{
   padding-top: 5%;
   padding-bottom: 10%;
 }
 .what-we-do{
-  font-family: ' Calibri';
   text-align: center;
   padding-top: 40px;
+  font-size: small;
 }
 .what-we-do .headings{
   padding-bottom: 38px;
@@ -104,10 +94,12 @@
   background: url("../img/background/c_image.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  width: 100%;
 }
 
 #contact input {
-  height: 45px;
+  height: 30px;
+  width: 300px;
 }
 
 #contact input,
@@ -193,12 +185,8 @@ footer p{
 }
 
 
-
-
-
 /* What we do section */
 #what-we-do {
-  min-height: 450px;
   display: flex;
   align-items: center;
   padding-bottom: 0%;
