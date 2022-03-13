@@ -30,7 +30,7 @@ this is a landing page for Delani Studio designed with html, css and Javascript.
 [Here is link to the site](
 
 ## Screenshot
-![Screenshot]()
+![Screenshot](img/screenshot.jpg)
 
 ## Contact
 
