@@ -20,6 +20,7 @@ This is a landing page for Delani Studio designed with html, css and Javascript.
 1. Download or clone the project
 2. Navigate to the cloned or downloaded folder
   (i) Open index.html file with your browser
+3. Ensure you have stable internet connection
 
 
 ## Design
