@@ -27,7 +27,7 @@ This is a landing page for Delani Studio designed with html, css and Javascript.
 ![Design](img/screenshot.jpg)
 
 ## Demo
-[Here is link to the site](
+[Here is link to the site](https://liz2222.github.io/week3-ip/)
 
 ## Screenshot
 ![Screenshot](img/screenshot.jpg)
