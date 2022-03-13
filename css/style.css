@@ -51,10 +51,11 @@
   text-align: center;
   padding-bottom: 30px;
   padding-top:40px;
-  font-family: 'Calibri';
+  font-family:Arial;
   font-size: 18px;
 }
 #about-page{
+  font-family: Arial;
 
 }
 .services-section{
