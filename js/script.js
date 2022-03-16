@@ -63,3 +63,19 @@ function clearForm() {
 }
 
 removeFormErrors();
+//portfolio overlay
+
+
+  $("p,#imgWrap").hover(function(){
+    $(this).css("border: white solid 4px", "white");
+    }, function(){
+    $("#imgWrap").css("color", "black");
+    
+});
+
+$("p,#imgWrap2").hover(function(){
+  $(this).css("border: white solid 4px", "white");
+  }, function(){
+  $("#imgWrap").css("color", "black");
+  
+});

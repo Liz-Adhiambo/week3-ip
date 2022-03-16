@@ -139,50 +139,6 @@ footer p{
   font-weight: 600;
 }
 
-#portfolio {
-  cursor: pointer;
-}
-
-#portfolio .project {
-  transition: all 0.3s linear;
-}
-
-#portfolio .project .project-name {
-  top: 46%;
-  text-align: center;
-  width: 100%;
-  height: 100%;
-  color: #fff;
-  font-weight: bold;
-  z-index: 1;
-  display: none;
-  transition: all 0.5s linear;
-  text-transform: uppercase;
-}
-
-#portfolio .project::before {
-  width: 0%;
-  height: 0%;
-  position: absolute;
-  content: "";
-  background: rgba(0, 0, 0, 0.5);
-  z-index: 0;
-  transition: all 0.3s;
-  top: 50%;
-  transform-origin: 50% 50%;
-  left: 50%;
-}
-
-#portfolio .project:hover::before {
-  width: 100%;
-  height: 100%;
-  transform: translate(-50%, -50%);
-}
-
-#portfolio .project:hover .project-name {
-  display:block
-}
-
 
 /* What we do section */
 #what-we-do {
@@ -197,4 +153,57 @@ footer p{
 
 #what-we-do .service .service-details {
   display: none;
+}
+
+
+.container_p h1{
+  text-align: center;
+  font-size: 24px;
+}
+.image__img{
+  display: block;
+  width: 100%;
+}
+.image__overlay{
+  position:absolute;
+  top: 0;
+  left: 0;
+  background: transparent;
+  width: 100%;
+  height: 100%;
+  color: rgb(252, 245, 246);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  opacity: 0;
+  text-transform: uppercase;
+  transition: opacity 0.25s;
+  border: #fff 4px;
+}
+.image__overlay >*{
+transform: translateY(20px);
+transition: transform 0.25s;
+}
+.image__overlay:hover{
+  opacity: 1;
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0.5);
+  display: block;
+}
+
+.image__title{
+  font-size: 1.2rem;
+  font-weight: bold;
+  justify-content: center;
+}
+.image__description{
+  font-size: 0.8rem;
+  
+  justify-content: center;
+
+}
+
+#imgWrap{
+  border: #fff 5px;
 }
